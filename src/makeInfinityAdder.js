@@ -6,11 +6,11 @@
 function makeInfinityAdder() {
   let soma = 0;
 
-  return function proximo(numero) {
+  return function adder(numero) {
     if (numero !== undefined) {
       soma += numero;
 
-      return proximo;
+      return adder;
     } else {
       const somaAtual = soma;
 
